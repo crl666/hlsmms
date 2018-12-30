@@ -1,0 +1,158 @@
+/* 公共样式 */
+body{
+    font-size: 14px;
+}
+a{
+    color: #ccc;
+    text-decoration: none;
+}
+html,body,#app,#home,#loginbox{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+.el-aside{
+    min-height: 969px;
+}
+.el-form-item__label{
+    margin-left: 10px;
+}
+/* ------------------------左侧-------------------------- */
+/* 左侧栏背景 */
+.el-aside {
+  background: url("../images/leftBG.png") repeat-y;
+}
+
+/* 菜单 */
+.el-menu{
+  background-color: transparent;
+  border: none;
+  width: 206px;
+  margin-left: 24px;
+}
+
+/* 子菜单 */
+.el-menu--inline{
+  margin-left: 0px;
+}
+
+.el-submenu .el-menu-item{
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px 0px 0px 5px;
+    text-align: right;
+    padding: 0px 20px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+/* 鼠标经过和焦点 */
+.el-menu-item:hover, .el-menu-item:focus{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* 激活样式 */
+.el-menu-item.is-active{
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 标题 */
+.el-submenu__title{
+  color: #fff;
+  background: url("../images/menuBG.png") repeat-x;
+  height: 33px;
+  line-height: 33px;
+  text-align: right;
+  margin-bottom: 10px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+/* 去掉箭头 */
+.el-submenu__icon-arrow{
+    display: none;
+}
+
+/* 左侧头部样式 */
+#leftHead{
+    margin-bottom: 24px;
+}
+#leftHead h1 {
+    font-size: 24px;
+    height: 26px;
+    color: #ccc;
+    line-height: 26px;
+    margin: 48px auto;
+    text-align: center;
+}
+#leftHead p{
+    color: #ccc;
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 25px;
+    padding-right: 20px;
+}
+#leftHead a{
+    text-decoration: none;
+    color: #aaa
+}
+
+/* -------------------------右侧----------------------- */
+
+.el-header,.el-footer,.el-main{
+    padding: 0 30px;
+}
+.el-container{
+    background-color: #fbfbfb;
+}
+
+/*----------------头部---------------------*/
+.el-header{
+    height: 123px !important;
+}
+.el-header h1{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.el-header p{
+    color: #555;
+}
+
+/*----------------尾部---------------------*/
+.el-footer{
+    height: 50px !important;
+    color: #555;
+    line-height: 50px;
+    margin-top: 40px;
+}
+.el-footer p{
+    height: 49px !important;
+    border-top: 1px solid #ccc;
+    margin:auto;
+}
+
+/* ---------------main-------------------- */
+.el-main{
+    height: 756px;
+}
+.el-main .el-card__header {
+    background: linear-gradient(#eee,#e5e5e5);
+    height: 40px;
+    line-height: 40px;
+ }
+ 
+ .el-main .el-card__header h3{
+     margin: 0px;
+ }
+ 
+ .el-alert{
+     margin-bottom: 15px;
+ }
+ /* 伸缩布局 */
+#mainContent{
+    display: flex;
+    flex-wrap: wrap;
+}
+#mainContent>*{
+    width: 100%;
+}
